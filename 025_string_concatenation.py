@@ -57,6 +57,7 @@ print("Function: greet")
 
 def greet(name):
 	# Return the string "Hello, Kay!" where "Kay" is the
+	return "Hello, " + name + "!"
 	# name provided
 	pass
 

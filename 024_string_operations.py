@@ -15,7 +15,7 @@ from lib.helpers import check_that_these_are_equal
 
 # Here's an example:
 
-length = len("Hello!")
+length = len("Hello world!")
 print(f"The string is {length} characters long")
 
 # @TASK: Try it out yourself by changing the string "Hello!"
@@ -42,7 +42,7 @@ old_string = "Hello, YOUR_NAME!"
 new_string = old_string.replace("YOUR_NAME", "Kay")
 
 # Uncomment this next line to see the result
-# print(new_string)
+print(new_string)
 
 # You'll notice here that the function is coming in a
 # different place. Let's compare `len` and `replace`:
@@ -51,6 +51,8 @@ my_string = "hello"
 
 len(my_string)              # <-- Independent Function
 my_string.replace("h", "w") # <-- Method Function
+
+print(hi)
 
 # Why the difference? It's a little complicated.
 #
@@ -79,7 +81,7 @@ print("Function: uppercase")
 # Search for 'python make string uppercase'
 
 def make_uppercase(string):
-  # Return the string in uppercase
+  return str.upper(string)
   pass
 
 check_that_these_are_equal(
@@ -97,6 +99,7 @@ print("Function: lowercase")
 
 def make_lowercase(string):
   # Return the string in lowercase
+  return str.lower(string)
   pass
 
 check_that_these_are_equal(
@@ -114,6 +117,7 @@ print("Function: strip_whitespace")
 
 def strip_whitespace(string):
   # Return the string with any whitespace removed from
+  return string.strip()
   # the start and end
   pass
 

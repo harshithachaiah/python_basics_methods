@@ -48,7 +48,7 @@ added = 2 + 3
 #
 # @TASK: Try this using `python` in the shell:
 
-(2 + 3) * 4
+print((2 + 3) * 4)
 
 # As you can see, we can use brackets to control the order
 # the expressions are evaluated.
@@ -91,7 +91,7 @@ add_one(4) * 3      # Evaluates to 15
 
 # To finish off, here's a real mind-bender:
 
-add_one(add_one(add_one(add_one(add_one(add_one(1))))))
+print(add_one(add_one(add_one(add_one(add_one(add_one(1)))))))
 
 # @TASK: What do you think that evaluates to? And why? Give
 # it a go and find out.

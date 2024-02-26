@@ -68,7 +68,7 @@
 # they're just for me to talk to you. You can create one
 # yourself if you like.
 
-# Type your name as a comment on the next line.
+#My name is Harshith A G
 
 # Hint: if you're on a Mac, type opt + 3 to get a #
 

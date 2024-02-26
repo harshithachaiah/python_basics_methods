@@ -38,6 +38,7 @@ def generate_frequency_graph(numbers):
   positive_integers = convert_negatives_to_positives(integers)
   number_frequency = calc_frequency_of_numbers(positive_integers)
   graph = format_graph(number_frequency)
+  
   return graph
 
 # Here we'll use filtering to get rid of the None values
@@ -88,3 +89,52 @@ print(generate_frequency_graph(example_numbers))
 # @TASK Run this file to see the result.
 
 # Once you're done, move on to 040_challenge_1_exercise.py
+
+
+
+def generate_Graph(number):
+  Integer = get_Integer(number)
+  PositiveNumbers = convert_negatives_to_positives(Integer)
+  Occurance  = NumberOccurance(PositiveNumbers)
+  graph = graph_generator(Occurance)
+  return graph
+  
+
+
+
+
+def get_Integer(number):
+  Integer = []
+  for num in number:
+    if num != None:
+      Integer.append(num)
+    
+  return Integer
+
+def covert_NegativeToPosiitve(Integer):
+  PositiveNumbers = []
+  for num in Integer:
+    if num < 0:
+      PositiveNumbers.append(num*(-1))
+  return PositiveNumbers
+
+def NumberOccurance(number):
+  occurance = {}
+  for num in number:
+    if num  not in occurance:
+      occurance[num] = 1
+    else:
+       occurance[num] =  occurance[num]+1
+  return occurance
+
+def graph_generator(number):
+  graph = ""
+  for num in number:
+    graph = graph + f"{num}: {'X' * number[num]}\n"
+    # graph += f"{num}: {'x' * number[num]}\n"
+  return graph
+
+
+print(generate_Graph(example_numbers))
+
+  

@@ -21,8 +21,9 @@ my_name = 'Kay'
 
 # Try out creating a string with your name in it:
 
-your_name = ???
+your_name = 'Harshith A G'
 print(your_name)
+print("Hello world")
 
 # @TASK: Check your work by running this file with:
 # python 022_strings.py

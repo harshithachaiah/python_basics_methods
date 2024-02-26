@@ -55,6 +55,7 @@ starter_board = [
   [".", ".", "."],
   [".", ".", "."]
 ]
+print(starter_board)
 
 print("Our starting board:")
 print(print_board(starter_board))
